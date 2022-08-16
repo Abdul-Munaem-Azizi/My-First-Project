@@ -1,0 +1,77 @@
+
+
+
+@import "_colors";
+
+
+body{
+    background-color: $myparacolor
+}
+
+.navbar{
+    background-color: rgb(125, 184, 233);
+    height: 70px;
+    width: 100%;
+    ul{
+        list-style-type: none;
+        li{
+            display: inline-block;
+            color: rgb(12, 12, 12);
+            padding: 20px;
+            font-size: 20px;
+            a{
+                text-decoration: none;
+                color: rgb(3, 30, 54);
+            }
+        }
+    }
+   
+   
+}
+
+
+h5{
+    
+font: {
+    family: cursive ;
+    width: 80px;
+    size: 23px;
+    
+}
+text: {
+    align:center;
+    decoration:underline
+
+}
+}
+.mybutton {
+    
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 25px;
+    
+}
+@mixin mybutton {
+    
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 25px;
+    
+}
+.btn1{
+    background-color: rgb(12, 133, 133);
+    // @include mybutton()
+    @extend .mybutton
+}
+.btn2{
+    background-color: rgb(12, 133, 133);
+    @include mybutton()
+}
+.btn3{
+    background-color: rgb(12, 133, 133);
+    @include mybutton()
+}
